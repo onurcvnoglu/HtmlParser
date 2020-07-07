@@ -10,7 +10,7 @@ namespace HtmlParser
     {
         static void Main(string[] args)
         {
-            HtmlParseManager.HtmlParseManagement parseManagement = new HtmlParseManager.HtmlParseManagement("/html/body/font/font/font/p[4]/table", "https://www.kadifeli.com/vasil/detayliKC.html");
+            HtmlParseManager.HtmlParseManagement parseManagement = new HtmlParseManager.HtmlParseManagement("//*[@id='mw-content-text']/div/p[2]", "https://tr.wikipedia.org/wiki/Vikipedi:Hakkında");
             var result = parseManagement.GetHtmlText();
             Console.WriteLine(result);
             Console.ReadKey();
